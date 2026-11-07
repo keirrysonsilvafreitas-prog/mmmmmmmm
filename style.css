@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f7f3;
+  color: #153d2b;
+  line-height: 1.6;
+}
+
+.header {
+  background: linear-gradient(135deg, #063b29, #08734d);
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.tag {
+  color: #b9e8ce;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.header h1 {
+  font-size: 30px;
+  max-width: 850px;
+  margin: 0 auto 10px;
+}
+
+.header p:last-child {
+  color: #e0f2e7;
+}
+
+main {
+  max-width: 1150px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  border-left: 5px solid #168653;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  color: #08734d;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #334d40;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.section-heading p {
+  color: #64776b;
+  font-size: 14px;
+}
+
+select {
+  padding: 11px 14px;
+  border: 1px solid #b7d3c1;
+  border-radius: 8px;
+  background: white;
+  color: #153d2b;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 13px;
+  padding: 22px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  min-width: 0;
+}
+
+.chart-card h3 {
+  color: #08734d;
+  margin-bottom: 8px;
+}
+
+.chart-description {
+  font-size: 13px;
+  color: #64776b;
+  min-height: 42px;
+  margin-bottom: 12px;
+}
+
+.chart-container {
+  position: relative;
+  height: 290px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.conclusao {
+  background: linear-gradient(135deg, #06442f, #08734d);
+  color: white;
+  padding: 28px;
+  border-radius: 14px;
+}
+
+.conclusao h2 {
+  color: #c4efd3;
+}
+
+.conclusao p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+footer {
+  background: #063b29;
+  color: #c4efd3;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 750px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .cards,
+  .charts {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .chart-container {
+    height: 260px;
+  }
+}

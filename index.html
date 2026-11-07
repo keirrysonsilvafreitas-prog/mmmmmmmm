@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dependência Tecnológica da IA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <p class="tag">MARATONA TECH · DILEMAS DIGITAIS</p>
+    <h1>Dependência tecnológica da inteligência artificial</h1>
+    <p>O impacto da IA nos hábitos de estudo e na aprendizagem dos estudantes.</p>
+  </header>
+
+  <main>
+    <section class="investigacao">
+      <h2> Nossa investigação</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Pergunta principal</h3>
+          <p>
+            O uso da IA pode comprometer a aprendizagem e a autonomia
+            intelectual dos estudantes?
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Hipótese</h3>
+          <p>
+            Embora a maioria dos estudantes afirme ler e aprender com as
+            respostas da IA, ainda existe uma parcela que as copia sem
+            buscar compreensão.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="resultados">
+      <div class="section-heading">
+        <div>
+          <h2>Resultados da pesquisa</h2>
+          <p>Dados coletados pelo Google Forms · 40 participantes</p>
+        </div>
+
+        <select id="chartFilter">
+          <option value="all">Mostrar todos</option>
+          <option value="usage">Frequência de uso</option>
+          <option value="learning">Comportamento após pesquisar</option>
+        </select>
+      </div>
+
+      <div class="charts">
+        <article class="chart-card" id="usageCard">
+          <h3>Frequência de utilização da IA</h3>
+          <p class="chart-description">
+            Você constantemente pesquisa ou usa respostas de chats de IA
+            em trabalhos ou tarefas escolares?
+          </p>
+          <div class="chart-container">
+            <canvas id="usageChart"></canvas>
+          </div>
+        </article>
+
+        <article class="chart-card" id="learningCard">
+          <h3>Comportamento após pesquisar</h3>
+          <p class="chart-description">
+            Após pesquisar as respostas, você se preocupa em lê-las
+            e consegue absorver algum conhecimento?
+          </p>
+          <div class="chart-container">
+            <canvas id="learningChart"></canvas>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    DILEMAS DIGITAIS · EDUCAÇÃO · TECNOLOGIA · PENSAMENTO CRÍTICO
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
